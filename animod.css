@@ -1,0 +1,646 @@
+/*
+=========================
+
+    ANIMOD V2016.01.01 
+
+=========================
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,900italic,700italic);
+
+/* covers EDIT ME */
+@import "http://mal-fellow-writer.appspot.com/anime/YOUR-USERNAME/?covers=http://dl.dropbox.com/u/49469857/MAL/premade/formats/covers/more";
+/* end covers */
+
+
+/* 
+WARNING: THIS WILL DISAPPEAR AFTER AN EDIT, PLEASE FIX BEFORE EACH EDIT TO AVOID BREAKING THE DESIGN (or losing the whole thing)
+there should be a margin for each side here, just set it to "none"!
+*/
+
+{
+margin-top: none;
+margin-bottom: none;
+margin-left: none;
+margin-right: none;
+}
+
+{
+margin-top: none;
+margin-bottom: none;
+margin-left: none;
+margin-right: none;
+}
+
+{
+padding-top: none;
+padding-bottom: none;
+padding-left: none;
+padding-right: none;
+}
+
+/* end */
+
+#fancybox-overlay {
+background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.List_LightBox {
+border: 2px solid #c5e9c4;
+color: #c5e9c4;
+text-transform: uppercase;
+padding: 2px 7px 2px 7px;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+}
+
+.List_LightBox:hover {
+background-color: rgba(32, 130, 95, 0.25) !important;
+color: #c5e9c4;
+}
+
+#mal\_control_strip .List_LightBox {
+border: 0px !important;
+padding: 0 !important;
+text-shadow: 0 !important;
+box-shadow: 0 !important;
+}
+
+#mal\_control_strip .List_LightBox:hover {
+background-color: transparent !important;
+}
+
+#list_surround .animetitle + small {
+background: white;
+color: #212121;
+font-size: 9px;
+margin-left: 10px;
+opacity: 1;
+padding: 2px 10px 2px 10px;
+text-transform: uppercase;
+font-family: "Roboto", ariel, sans-serif;
+cursor: default;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+width: 7px;
+background-color: #414141;
+}
+
+::-webkit-scrollbar-track {
+-webkit-background: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #141414;
+}
+
+::-webkit-scrollbar-thumb:focus {
+-webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.7);
+box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.7);
+}
+
+#mal\_control_strip > #mal\_cs_listinfo {
+text-decoration: none !important;
+}
+
+#mal\_control_strip > #mal\_cs_links {
+text-decoration: none !important;
+}
+
+#mal\_control_strip > #mal\_cs_otherlinks {
+text-decoration: none !important;
+}
+
+#mal\_control_strip {
+background-color: rgba(0, 0, 0, 0.3) !important;
+background-image: url(http://i.imgur.com/nFwVWX4.jpg) !important;
+background-position: center center !important;
+background-size: cover !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed !important;
+transform: translateY(-43px);
+-webkit-transform: translateY(-43px);
+-moz-transform: translateY(-43px);
+-o-transform: translateY(-43px);
+-ms-transform: translateY(-43px);
+transition: all .3s ease;
+-webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-o-transition: all .3s ease;
+border-bottom: 0px #000000 solid;
+position: fixed !important;
+text-shadow: 2px 1px 2px rgba(150, 150, 150, 1) !important;
+z-index: 99999;
+text-decoration: none !important;
+}
+
+#mal\_control_strip #mal\_cs_powered input {
+background: none !important; 
+border-bottom: 2px solid white !important;
+border-top: 0px !important;
+border-left: 0px !important;
+border-right: 0px !important;
+color: #b5b5b5;
+-webkit-transition: all .2s ease;
+-moz-transition: all .2s ease;
+-o-transition: all .2s ease;
+transition: all .2s ease;
+}
+
+#mal\_control_strip #mal\_cs_powered input:focus {
+width: calc(127px + 50px) !important;
+outline: none !important;
+color: white;
+}
+
+#mal\_control_strip #mal\_cs_powered #searchListButton {
+width: 0px !important;
+height: 0px !important;
+}
+
+#mal\_control_strip:before {
+content: "MENU";
+position: fixed;
+display: block;
+margin-left: .6%;
+left: 2px;
+top: 83px;
+font-size: 10px;
+color: white;
+text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+cursor: default;
+transition: all .23s ease;
+}
+
+#mal\_control_strip:after {
+content: "+";
+position: fixed;
+top: 55px;
+font-size: 40px;
+margin-left: .5%;
+width: 30px !important;
+height: 35px;
+padding: 2px;
+color: white;
+text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+transition: all .2s ease;
+display: block;
+cursor: default;
+}
+
+#mal\_control_strip:hover {
+transform: translateY(0px);
+-webkit-transform: translateY(0px);
+-moz-transform: translateY(0px);
+-o-transform: translateY(0px);
+-ms-transform: translateY(0px);
+height: 43px !important;
+border-bottom: 0px black solid;
+}
+
+#mal\_control_strip:hover:after {
+width: 9000px !important;
+margin-top: -13px;
+height: 70px;
+display: block;
+position: absolute;
+margin-left: -10%;
+color: rgba(0, 0, 0, 0);
+}
+#mal\_control_strip:hover:before {
+color: rgba(0, 0, 0, 0);
+text-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+transform: translateX(-420px);
+}
+
+/*
+MAIN BACKGROUND COLOR AND IMAGE
+*/
+body {
+background: url(http://i.imgur.com/EwOxUwY.jpg);
+background-color: #2e2e2e;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+#inlineContent {
+background-size: cover !Important;
+display: inline-block !important;
+height: 100% !important;
+left: 0px !important;
+margin: auto !important;
+position: fixed !important;
+right: 0 !important;
+top: 0 !important;
+width: 100% !important;
+z-index: -1 !important;
+}
+
+/*
+TITLE
+The List header which by default says My Anime List
+can be changed out here.
+*/
+
+#list_surround {
+background: url(http://i.imgur.com/9Xw6Qvv.png) no-repeat scroll 50% 1px transparent;
+font-size: 81.25%;
+line-height: 1;
+margin: 0 auto;
+padding-bottom: 10px;
+padding-top: 360px; /* 288 */
+width: 920px;
+animation-name:fadein;
+animation-duration:.75s;
+animation-iteration-count:1;
+animation-delay; .5s;
+-webkit-animation-name:fadein;
+-webkit-animation-duration:.75s;
+-webkit-animation-iteration-count:1;
+}
+
+@-webkit-keyframes fadein{0%{opacity:0;transform:translateY(48px);-webkit-transform:translateY(48px)}100%{opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}}@-moz-keyframes fadein{0%{opacity:0;transform:translateY(48px);-webkit-transform:translateY(48px)}100%{opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}}@-o-keyframes fadein{0%{opacity:0;transform:translateY(48px);-webkit-transform:translateY(48px)}100%{opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}}@keyframes fadein{0%{opacity:0;transform:translateY(48px);-webkit-transform:translateY(48px)}100%{opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}}
+
+/*
+FONT
+Font used across the whole list. 
+*/
+body {
+font-family: 'Roboto', ariel, sans-serif;
+}
+
+
+/*
+LINK COLOR
+*/
+a {
+-moz-transition: all .15s ease ;
+-webkit-transition: all .15s ease;
+-o-transition: all .15s ease;
+transition: all .15s ease;
+color: #EEEEEE;
+text-decoration: none;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+a:hover {
+color: #eeeeee;
+text-shadow: 0 1px rgba(255, 255, 255, 0.15);
+}
+
+
+
+/* CATEGORY LINKS */
+.status_not_selected, .status_selected {
+border: 0 none !important;
+height: auto !important;
+padding: 0 8px;
+text-align: center !important;
+width: 16.667% !important;
+}
+.status_not_selected a, .status_selected a {
+background-color: rgba(0, 0, 0, 0);
+border: 4px solid white;
+text-transform: uppercase;
+color: #FFFFFF;
+display: block !important;
+font-weight: bold;
+padding: 8px;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+transition: all .25s ease; 
+}
+.status_selected a {
+border: 4px solid white;
+background: white;
+color: #212121;
+font-weight: bold;
+text-transform: uppercase;
+text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.2s ease-in-out !important;
+}
+.status_not_selected a:hover {
+background-color: rgba(255, 255, 255, 0.4);
+}
+.status_selected a:hover {
+box-shadow: 0px 4px 8px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+}
+
+
+
+/* HEADER */
+.table_header {
+background-color: rgba(255, 255, 255, 0.4);
+border-bottom: 5px solid white !important;
+}
+
+.table_header:nth-of-type(2) {
+text-align: left;
+}
+
+
+
+/* ROWS COLOR */
+.td1, .td2 {
+-moz-transition: all 0.15s ease;
+-webkit-transition: all 0.15s ease;
+-o-transition: all 0.15s ease;
+transition: all 0.15s ease;
+background-color: rgba(0, 0, 0, 0);
+border-bottom: 3px solid white !important;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) !important;
+font-weight: bold;
+color: #eeeeee;
+}
+
+.td1 input[type=text], td2 input[type=text] {
+background-color: transparent !important;
+border: none !important;
+border-bottom: 2px solid white !important;
+transition: all .25s ease;
+margin-right: -2px !important;
+color: white !important;
+width: 35px !important;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7) !important;
+padding: 1px 0px 1px 0px !important;
+text-align: center;
+font-family: "Roboto", ariel, sans-serif;
+}
+
+.td1 input[type=text]:focus, td2 input[type=text]:focus {
+outline: none !important;
+background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+input[value="Go"] {
+background-color: transparent !important;
+border: 2px solid white !important;
+font-family: "Roboto", ariel, sans-serif !important;
+text-transform: uppercase !important;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7) !important;
+color: white !important;
+transition: all .1s ease;
+}
+
+input[value="Go"]:hover {
+background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+input[value="Go"]:focus {
+outline: none !important;
+transform: translateY(1px) !important;
+}
+
+/* ROWS HOVER */
+tr:hover [class^="td"] {
+background-color: rgba(255, 255, 255, 0.2);
+}
+.td1:nth-of-type(2), .td2:nth-of-type(2) {
+text-align: left;
+}
+
+/* LIST SETTINGS */
+.table_header, .td1, .td2, .status_selected, .status_not_selected, .category_totals {
+border: 0;
+padding: 4px;
+text-align: center;
+vertical-align: middle;
+}
+.table_header, .td1, .td2, .category_totals {
+line-height: 30px;
+}
+.borderRBL{
+line-height: normal !important;
+}
+[cellspacing="0"] {
+line-height: 17px;
+}
+[class^="header_"] +{
+border-collapse: separate !important;
+}
+
+
+
+/* CATEGORY TOTALS */
+.category_totals {
+-moz-transition: all 0.15s ease;
+-webkit-transition: all 0.15s ease;
+-o-transition: all 0.15s ease;
+transition: all 0.15s ease;
+background-color: rgba(0, 0, 0, 0.0);
+color: white;
+text-align: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+.category_totals:hover {
+color: #EEEEEE;
+}
+
+
+
+/* HEADER TEXT & DIMENSIONS */
+[class^="header_"] * {
+font-size: 19px;
+height: 0px;
+line-height: 24px;
+padding-bottom: 4px;
+text-align: right;
+vertical-align: bottom;
+}
+.header_title {
+border-radius: 4px 4px 4px 4px;
+display: inline-block;
+font-style: italic;
+font-weight: bold;
+height: auto;
+padding: 4px 9px 0 0;
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.15);
+opacity: 0.7;
+}
+
+
+
+/* FOOTER */
+#grand_totals {
+border: 5px solid white;
+color: white;
+line-height: 20px;
+min-height: 20px;
+padding: 8px;
+text-align: center;
+vertical-align: middle;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+font-weight: bold;
+}
+#copyright {
+border: 5px solid white;
+color: white;
+line-height: 17px;
+margin-top: 10px;
+margin-bottom: -20px;
+padding: 8px;
+text-align: center;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+font-weight: bold;
+}
+#copyright:after {
+content: " Designed with ♡ by Shixma.";
+}
+
+
+
+/* ================= MODS =================*/
+
+
+/* MOD: -Small Cover- */
+
+.hide {
+background-color: #2e2f2f;
+background-position: 50% 50%;
+background-repeat: no-repeat no-repeat;
+background: url(http://i.imgur.com/bhGLzHB.png); /* ERROR CALLBACK: Should mal-fellow-writer not work this will be used */
+background-size: cover;
+border: 1px solid white;
+-webkit-box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.76);
+-moz-box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.76);
+box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.76);
+border-radius: 180px;
+display: inline-block !important;
+height: 20px;
+margin-left: 30px;
+margin-top: -34px;
+position: absolute;
+width: 20px;
+}
+
+.animetitle {
+margin-left: 17px;
+}
+
+/* END: -Small Cover- */
+
+
+/* MOD: -Normal Cover- */
+
+:hover + .hide {
+background-position: center center !important;
+background-repeat: no-repeat !important;
+background-size: cover;
+background: url(http://i.imgur.com/7wqGILZ.png); /* ERROR CALLBACK: Should mal-fellow-writer not work this will be used */
+border: 5px solid rgb(255, 255, 255);
+box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.41);
+display: block !important;
+height: 317px;
+left: 10px;
+padding-bottom: 0;
+position: fixed;
+border-radius: 0px !important;
+top: 160px;
+width: 220px;
+animation-name: TTIPSlideIn;
+animation-duration:.25s;
+animation-iteration-count:1;
+-webkit-animation-name: TTIPSlideIn;
+-webkit-animation-duration: .25s;
+-webkit-animation-iteration-count:1;
+} 
+
+/* END: -Normal Cover-*/
+
+
+/* MOD: -Tool Tip- */
+
+@-webkit-keyframes TTIPSlideUp{0%{opacity:0;transform:translateY(10px);-webkit-transform:translateY(10px)}100%{opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}}
+@-moz-keyframes TTIPSlideUp{0%{opacity:0;transform:translateY(10px);-webkit-transform:translateY(10px)}100%{opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}}
+@-o-keyframes TTIPSlideUp{0%{opacity:0;transform:translateY(10px);-webkit-transform:translateY(10px)}100%{opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}}
+@keyframes TTIPSlideUp{0%{opacity:0;transform:translateY(10px);-webkit-transform:translateY(10px)}100%{opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}}
+
+@-webkit-keyframes TTIPSlideIn{0%{opacity:0;transform:translateX(-100%);-webkit-transform:translateX(-100%)}100%{opacity:1;transform:translateX(0px);-webkit-transform:translateX(0px)}}
+@-moz-keyframes TTIPSlideIn{0%{opacity:0;transform:translateX(-100%);-webkit-transform:translateX(-100%)}100%{opacity:1;transform:translateX(0px);-webkit-transform:translateX(0px)}}
+@-o-keyframes TTIPSlideIn{0%{opacity:0;transform:translateX(-100%);-webkit-transform:translateX(-100%)}100%{opacity:1;transform:translateX(0px);-webkit-transform:translateX(0px)}}
+@keyframes TTIPSlideIn{0%{opacity:0;transform:translateX(-100%);-webkit-transform:translateX(-100%)}100%{opacity:1;transform:translateX(0px);-webkit-transform:translateX(0px)}}
+
+a[title]:hover:after {
+content: attr(title);
+background: white;
+color: #212121;
+border-radius: 0px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+text-transform: uppercase;
+position: absolute;
+font-size: 9px;
+padding: 10px;
+width: 60px;
+height: 16px;
+-webkit-clip-path: polygon(0 23%, 100% 23%, 100% 75%, 55% 75%, 49.5% 87%, 44% 75%, 0% 75%);
+clip-path: polygon(0 23%, 100% 23%, 100% 75%, 55% 75%, 49.5% 87%, 44% 75%, 0% 75%);
+margin-top: -53px !important;
+animation-name: TTIPSlideUp;
+animation-duration:.35s;
+animation-iteration-count:1;
+-webkit-animation-name: TTIPSlideUp;
+-webkit-animation-duration: .35s;
+-webkit-animation-iteration-count:1;
+}
+
+.td1 a[title]:hover:after, .td2 a[title]:hover:after {
+content: attr(title) !important;
+background: white !important;
+color: #212121 !important;
+border-radius: 0px !important;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+padding: 2px 12px 2px 12px !important;
+text-transform: uppercase !important;
+position: fixed !important;
+font-size: 9px !important;
+left: 0 !important;
+top: 120px !important;
+-webkit-clip-path: none !important;
+clip-path: none !important;
+width: auto !important;
+height: auto !important;
+animation-name: TTIPSlideIn;
+animation-duration:.25s;
+animation-iteration-count:1;
+-webkit-animation-name: TTIPSlideIn;
+-webkit-animation-duration: .25s;
+-webkit-animation-iteration-count:1;
+}
+
+.status_not_selected:nth-of-type(1) a:hover:after, .status_selected:nth-of-type(1) a:hover:after {
+margin-left: -115px !important;
+}
+.status_not_selected:nth-of-type(2) a:hover:after, .status_selected:nth-of-type(2) a:hover:after {
+margin-left: -80px !important;
+}
+.status_not_selected:nth-of-type(3) a:hover:after, .status_selected:nth-of-type(3) a:hover:after {
+margin-left: -70px !important;
+}
+
+.status_not_selected:nth-of-type(4) a:hover:after, .status_selected:nth-of-type(4) a:hover:after {
+margin-left: -72.5px !important;
+}
+
+.status_not_selected:nth-of-type(5) a:hover:after, .status_selected:nth-of-type(5) a:hover:after {
+margin-left: -94px !important;
+}
+.status_not_selected:nth-of-type(6) a:hover:after, .status_selected:nth-of-type(6) a:hover:after {
+width: 90px !important;
+margin-left: -91px;
+}
+
+a[title=""]:hover:after {
+visibility: hidden !important;
+}
+
+/* END: -Tool Tip- */
