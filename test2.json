@@ -1,0 +1,21 @@
+{
+  "inventoryStatus": {
+  "uri": "https://api.digitalriver.com/v1/shoppers/me/products/5438792800/inventory-status",
+  "product": [
+  {
+  "uri": "https://api.digitalriver.com/v1/shoppers/me/products/5438792800",
+  "id": 5438792800,
+  "externalReferenceId": "900-1G133-2530-000",
+  "companyId": "nvidia"
+  }
+  ],
+  "availableQuantityIsEstimated": "false",
+  "productIsInStock": "true",
+  "productIsAllowsBackorders": "false",
+  "productIsTracked": "true",
+  "requestedQuantityAvailable": "true",
+  "status": "PRODUCT_INVENTORY_OUT_OF_STOCK",
+  "statusIsEstimated": "false",
+  "customStockMessage": null
+  }
+  }
